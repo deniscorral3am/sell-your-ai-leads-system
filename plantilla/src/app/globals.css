@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* Marca Sell Your AI: papel, tinta y latón. Liso, sin degradados ni sombras. */
+@theme {
+  --color-papel: #F4F1EA;
+  --color-papel-2: #EDE8DC;
+  --color-crema: #E8E3D7;
+  --color-linea: #D7D0BE;
+  --color-tinta: #0E0E0D;
+  --color-tinta-2: #1A1A18;
+  --color-gris: #6B6659;
+  --color-laton: #A8884A;
+  --color-laton-2: #8A6E36;
+  --color-oliva: #5E5A3C;
+  --color-bien: #4E6B3A;
+  --color-bien-suave: #E3E6D3;
+  --color-aviso: #9A4A2E;
+  --color-aviso-suave: #F1DFD3;
+
+  --font-serif: var(--fuente-serif), "Times New Roman", serif;
+  --font-sans: var(--fuente-sans), -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: var(--fuente-mono), ui-monospace, Menlo, monospace;
+}
+
+html { background: var(--color-papel); color: var(--color-tinta); }
+body { font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+::selection { background: var(--color-laton); color: var(--color-papel); }
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-laton-2);
+  font-weight: 500;
+}
+.titulo { font-family: var(--font-serif); font-weight: 400; letter-spacing: -0.015em; line-height: 1; }
+.titulo em { font-style: italic; color: var(--color-laton-2); }
+
+input, textarea, select { font: inherit; }
+:focus-visible { outline: 2px solid var(--color-laton); outline-offset: 2px; }

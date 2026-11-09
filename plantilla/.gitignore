@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+.DS_Store
+.env*
+# Tus claves y tus sesiones de WhatsApp: nunca a GitHub
+config.local.json
+.whatsapp/
+datos/*.json
